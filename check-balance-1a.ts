@@ -3,9 +3,9 @@ import { LAMPORTS_PER_SOL, PublicKey, Connection } from "@solana/web3.js";
 const clusterUrl="https://api.mainNet.solana.com";
 
 const connection = new Connection(clusterUrl, "confirmed");
-// const suplliedPubKey = process.argv[2]; // provide wallet address;
+const suplliedPubKey = process.argv[2]; // provide wallet address;
 
-const suplliedPubKey= "toly.sol"
+
 
 if(suplliedPubKey){
     const publicKey = new PublicKey(suplliedPubKey)
