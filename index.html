@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airdrop</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        background-color: black;
+        color: white;
+      }
+      body {
+        display: flex;
+        padding: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        align-items: center;
+      }
+      label {
+        font-weight: 700;
+      }
+      input {
+        cursor: pointer;
+        padding: 0.7em;
+        border: solid 1px dodgerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label for="wallet-address"> Request Airdrop</label>
+      <form>
+        <input
+          type="text"
+          name="wallet-address"
+          id="wallet-address"
+          value="zF6N2Q2bLLvr6CJquYGMhaavvZdP7rcH8FM1GUPjxRN"
+          placeholder="Wallet Address" />
+        <input type="submit" value="Confirm Airdrop" />
+      </form>
+    </div>
+
+    <script src="./check-balance.ts"></script>
+  </body>
+</html>
